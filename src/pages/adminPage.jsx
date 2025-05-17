@@ -4,10 +4,12 @@ export default function AdminPage(){
     return(
         <div className='w-full h-screen flex'>
             <div className="h-full w-[200px] bg-[#606060] text-white flex flex-col">
-                <Link to='/admin/products'>Products</Link>
-                <Link to='/admin/users'>Users</Link>
-                <Link to='/admin/orders'>Orders</Link>
-                <Link to='/admin/reviews'>Reviews</Link>
+                <div className="h-full w-full flex flex-col fixed left-[10px]">
+                    <Link to='/admin/products'>Products</Link>
+                    <Link to='/admin/users'>Users</Link>
+                    <Link to='/admin/orders'>Orders</Link>
+                    <Link to='/admin/reviews'>Reviews</Link>
+                </div>
             </div>
             <div className="h-full w-[calc(100%-200px)] bg-[#DBDBDB]">
                 <Routes path='/*'>
